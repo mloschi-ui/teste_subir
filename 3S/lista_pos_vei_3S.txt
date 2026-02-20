@@ -1,0 +1,203 @@
+"""
+API 3S - Sistema de Rastreamento de Veículos
+==============================================
+
+Bibliotecas utilizadas:
+-----------------------
+- os: Manipulação de variáveis de ambiente
+- requests: Fazer requisições HTTP (GET, POST)
+- json: Manipular dados JSON
+- datetime: Trabalhar com datas e horários
+- dotenv (python-dotenv): Carregar e salvar variáveis no .env
+- time: Controlar delays entre requisições
+
+Instalação:
+-----------
+pip install requests python-dotenv
+"""
+
+import os
+import requests
+import json
+import time
+from datetime import datetime
+from dotenv import load_dotenv, set_key
+
+
+class API3S:
+    def __init__(self):
+        load_dotenv()
+        self.username = os.getenv('3S_USERNAME')
+        self.password = os.getenv('3S_PASSWORD')
+        self.token = os.getenv('3S_TOKEN')
+        self.base_url = 'https://3stecnologia.eti.br/dataexportapi'
+        self.env_file = '.env'
+        self.max_chamadas_por_minuto = 9  # Limite seguro (API permite 10)
+        self.tempo_espera = 62  # segundos de espera após atingir o limite
+        self.contador_chamadas = 0
+
+    def validar_login(self):
+        """
+        Faz login na API e retorna o token de autenticação
+        Salva automaticamente no .env
+        """
+        url = f'{self.base_url}/ValidaLogin'
+        
+        payload = {
+            'username': self.username,
+            'password': self.password
+        }
+        
+        try:
+            response = requests.post(url, json=payload)
+            response.raise_for_status()
+            
+            data = response.json()
+            token = (
+                data.get('token')
+                or data.get('Token')
+                or data.get('access_token')
+                or data.get('AccessToken')
+            )
+            
+            if token:
+                set_key(self.env_file, '3S_TOKEN', token)
+                self.token = token
+                print(f'✅ Login realizado com sucesso!')
+                return token
+            else:
+                print(f'❌ Token não encontrado na resposta')
+                return None
+                
+        except requests.exceptions.RequestException as e:
+            print(f'❌ Erro ao fazer login: {e}')
+            return None
+    
+    def verificar_token_valido(self):
+        """
+        Verifica se o token atual ainda é válido
+        """
+        if not self.token or self.token == '':
+            return False
+        
+        headers = {'Authorization': f'Bearer {self.token}'}
+        
+        try:
+            response = requests.get(f'{self.base_url}/ListaVeiculos', headers=headers)
+            return response.status_code == 200
+        except:
+            return False
+    
+    def obter_token(self):
+        """
+        Obtém um token válido (reutiliza existente ou gera novo)
+        """
+        if self.verificar_token_valido():
+            print('✅ Token válido encontrado!')
+            return self.token
+        
+        print('🔄 Token inválido ou expirado. Gerando novo token...')
+        set_key(self.env_file, '3S_TOKEN', '')
+        return self.validar_login()
+    
+    def controlar_rate_limit(self):
+        """
+        Controla o rate limit da API (9 chamadas por minuto)
+        """
+        self.contador_chamadas += 1
+        
+        if self.contador_chamadas >= self.max_chamadas_por_minuto:
+            print(f'\n⏳ Limite de {self.max_chamadas_por_minuto} chamadas atingido.')
+            print(f'⏳ Aguardando {self.tempo_espera} segundos...\n')
+            time.sleep(self.tempo_espera)
+            self.contador_chamadas = 0
+    
+    def obter_todas_posicoes(self):
+        """
+        Obtém a última posição de TODOS os veículos de uma vez
+        Usando id_veiculo = 0 conforme documentação da API
+        """
+        token = self.obter_token()
+        
+        if not token:
+            print('❌ Não foi possível obter token válido')
+            return None
+        
+        url = f'{self.base_url}/ListaUltimaPosicaoVeiculos/0'
+        headers = {'Authorization': f'Bearer {token}'}
+        
+        print('📍 Buscando posições de TODOS os veículos...\n')
+        
+        max_tentativas = 3
+        tentativa = 0
+        
+        while tentativa < max_tentativas:
+            try:
+                response = requests.get(url, headers=headers)
+                response.raise_for_status()
+                
+                # Incrementa contador de chamadas
+                self.controlar_rate_limit()
+                
+                posicoes = response.json()
+                
+                # Verifica se retornou erro de rate limit
+                if isinstance(posicoes, list) and len(posicoes) > 0:
+                    if 'ErroProcessamento' in posicoes[0]:
+                        erro = posicoes[0]['ErroProcessamento']
+                        
+                        if '3S.1040' in erro:  # Excesso de chamadas
+                            print(f'⚠️ Rate limit atingido. Aguardando {self.tempo_espera} segundos...')
+                            time.sleep(self.tempo_espera)
+                            self.contador_chamadas = 0
+                            tentativa += 1
+                            continue
+                        else:
+                            print(f'❌ Erro ao buscar posições: {erro}')
+                            return None
+                
+                print(f'✅ {len(posicoes)} posições obtidas com sucesso!\n')
+                return posicoes
+                
+            except requests.exceptions.RequestException as e:
+                print(f'❌ Erro ao obter posições: {e}')
+                tentativa += 1
+                if tentativa < max_tentativas:
+                    print(f'🔄 Tentativa {tentativa + 1}/{max_tentativas}...')
+                    time.sleep(5)
+        
+        return None
+    
+    def processar_todas_posicoes(self):
+        """
+        Função principal que processa todas as posições dos veículos
+        """
+        print('🚀 Iniciando processamento...\n')
+        print('='*60)
+        
+        # Busca todas as posições de uma vez (id_veiculo = 0)
+        posicoes = self.obter_todas_posicoes()
+        
+        if not posicoes:
+            print('❌ Nenhuma posição encontrada')
+            return None
+        
+        # Salva o resultado em um arquivo JSON
+        timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
+        arquivo_saida = f'posicoes_veiculos_{timestamp}.json'
+        
+        with open(arquivo_saida, 'w', encoding='utf-8') as f:
+            json.dump(posicoes, f, ensure_ascii=False, indent=2)
+        
+        print('='*60)
+        print(f'✅ Processamento concluído!')
+        print(f'📄 Arquivo gerado: {arquivo_saida}')
+        print(f'📊 Total de posições: {len(posicoes)}')
+        print('='*60)
+        
+        return posicoes
+
+
+if __name__ == '__main__':
+    api = API3S()
+    api.processar_todas_posicoes()

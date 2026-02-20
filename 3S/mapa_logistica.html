@@ -1,0 +1,2795 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_f5b9670526c639adee3d137044c63bf6 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_f5b9670526c639adee3d137044c63bf6" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_f5b9670526c639adee3d137044c63bf6 = L.map(
+                "map_f5b9670526c639adee3d137044c63bf6",
+                {
+                    center: [-15.78, -47.92],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 4,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_101b529a5a22f2d73a2a23d3df54cbff = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_101b529a5a22f2d73a2a23d3df54cbff.addTo(map_f5b9670526c639adee3d137044c63bf6);
+        
+    
+            var marker_03b870d9a6b2180ec513943a025721b7 = L.marker(
+                [-22.995892, -47.131315],
+                {
+}
+            ).addTo(map_f5b9670526c639adee3d137044c63bf6);
+        
+    
+            var icon_5b1faee50f3e0dba47eff6b27c7746fa = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "truck",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4b18d262f62622ed20839a7d7cf52456 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_28850005882367b620509256caa78db6 = $(`<div id="html_28850005882367b620509256caa78db6" style="width: 100.0%; height: 100.0%;"><b>Caminhão:</b> JXG 4736<br><b>Velocidade:</b> 0 km/h<br><b>Última Atualização:</b> Não informada</div>`)[0];
+                popup_4b18d262f62622ed20839a7d7cf52456.setContent(html_28850005882367b620509256caa78db6);
+            
+        
+
+        marker_03b870d9a6b2180ec513943a025721b7.bindPopup(popup_4b18d262f62622ed20839a7d7cf52456)
+        ;
+
+        
+    
+    
+            marker_03b870d9a6b2180ec513943a025721b7.bindTooltip(
+                `<div>
+                     Placa: JXG 4736
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_03b870d9a6b2180ec513943a025721b7.setIcon(icon_5b1faee50f3e0dba47eff6b27c7746fa);
+            
+    
+            var marker_b87aa1eef8923ee2b092d672553dadb5 = L.marker(
+                [-1.376812, -48.402643],
+                {
+}
+            ).addTo(map_f5b9670526c639adee3d137044c63bf6);
+        
+    
+            var icon_d7d8919542effc1317859a889b0cc11a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "truck",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ab4f1879031a3e29af4691c83100ebaa = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ccd731292a0b07708c3835c94e5259c9 = $(`<div id="html_ccd731292a0b07708c3835c94e5259c9" style="width: 100.0%; height: 100.0%;"><b>Caminhão:</b> JXN 6747<br><b>Velocidade:</b> 0 km/h<br><b>Última Atualização:</b> Não informada</div>`)[0];
+                popup_ab4f1879031a3e29af4691c83100ebaa.setContent(html_ccd731292a0b07708c3835c94e5259c9);
+            
+        
+
+        marker_b87aa1eef8923ee2b092d672553dadb5.bindPopup(popup_ab4f1879031a3e29af4691c83100ebaa)
+        ;
+
+        
+    
+    
+            marker_b87aa1eef8923ee2b092d672553dadb5.bindTooltip(
+                `<div>
+                     Placa: JXN 6747
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b87aa1eef8923ee2b092d672553dadb5.setIcon(icon_d7d8919542effc1317859a889b0cc11a);
+            
+    
+            var marker_56b723acbf243132574ebfb2d09291e2 = L.marker(
+                [-3.121728, -59.979785],
+                {
+}
+            ).addTo(map_f5b9670526c639adee3d137044c63bf6);
+        
+    
+            var icon_6682d131897976b0ba851b8ca19160e9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "truck",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b7b690807c963022f3b403fc87991080 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_940c89a0f9c56dbd7bc8f7b3cb320deb = $(`<div id="html_940c89a0f9c56dbd7bc8f7b3cb320deb" style="width: 100.0%; height: 100.0%;"><b>Caminhão:</b> JXP 3907<br><b>Velocidade:</b> 0 km/h<br><b>Última Atualização:</b> Não informada</div>`)[0];
+                popup_b7b690807c963022f3b403fc87991080.setContent(html_940c89a0f9c56dbd7bc8f7b3cb320deb);
+            
+        
+
+        marker_56b723acbf243132574ebfb2d09291e2.bindPopup(popup_b7b690807c963022f3b403fc87991080)
+        ;
+
+        
+    
+    
+            marker_56b723acbf243132574ebfb2d09291e2.bindTooltip(
+                `<div>
+                     Placa: JXP 3907
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_56b723acbf243132574ebfb2d09291e2.setIcon(icon_6682d131897976b0ba851b8ca19160e9);
+            
+    
+            var marker_a2c235d12c4edc5c91ecbd030c1c00fb = L.marker(
+                [-22.994007, -47.130434],
+                {
+}
+            ).addTo(map_f5b9670526c639adee3d137044c63bf6);
+        
+    
+            var icon_9a85e43c5e22fbc8f2204512d3963409 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "truck",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a87e4d284d49f89a14f8745fb576271f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7efdee32d7e7186b0e20245802ec2abf = $(`<div id="html_7efdee32d7e7186b0e20245802ec2abf" style="width: 100.0%; height: 100.0%;"><b>Caminhão:</b> NOJ 0300<br><b>Velocidade:</b> 0 km/h<br><b>Última Atualização:</b> Não informada</div>`)[0];
+                popup_a87e4d284d49f89a14f8745fb576271f.setContent(html_7efdee32d7e7186b0e20245802ec2abf);
+            
+        
+
+        marker_a2c235d12c4edc5c91ecbd030c1c00fb.bindPopup(popup_a87e4d284d49f89a14f8745fb576271f)
+        ;
+
+        
+    
+    
+            marker_a2c235d12c4edc5c91ecbd030c1c00fb.bindTooltip(
+                `<div>
+                     Placa: NOJ 0300
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a2c235d12c4edc5c91ecbd030c1c00fb.setIcon(icon_9a85e43c5e22fbc8f2204512d3963409);
+            
+    
+            var marker_9844bc45f527120c20803dbb8982485d = L.marker(
+                [-3.122558, -59.979387],
+                {
+}
+            ).addTo(map_f5b9670526c639adee3d137044c63bf6);
+        
+    
+            var icon_a032b1c8d5fb5a8bda0280b5c104e301 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "truck",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4777b77c3a3ad0a44d5af6213f5d10ea = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_beb61abb304ee581f361c363c9d349e1 = $(`<div id="html_beb61abb304ee581f361c363c9d349e1" style="width: 100.0%; height: 100.0%;"><b>Caminhão:</b> JXO 2114<br><b>Velocidade:</b> 0 km/h<br><b>Última Atualização:</b> Não informada</div>`)[0];
+                popup_4777b77c3a3ad0a44d5af6213f5d10ea.setContent(html_beb61abb304ee581f361c363c9d349e1);
+            
+        
+
+        marker_9844bc45f527120c20803dbb8982485d.bindPopup(popup_4777b77c3a3ad0a44d5af6213f5d10ea)
+        ;
+
+        
+    
+    
+            marker_9844bc45f527120c20803dbb8982485d.bindTooltip(
+                `<div>
+                     Placa: JXO 2114
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9844bc45f527120c20803dbb8982485d.setIcon(icon_a032b1c8d5fb5a8bda0280b5c104e301);
+            
+    
+            var marker_b56d9e0193ffa10eede1ded8dd972268 = L.marker(
+                [-2.441634, -54.532275],
+                {
+}
+            ).addTo(map_f5b9670526c639adee3d137044c63bf6);
+        
+    
+            var icon_37bdc1d30f3f3010dc0cbba95a2e1251 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "truck",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7fd93e3232a4612a0f40ac49e0513eb2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d8b9784d47b4db7dfcbf4a923e03fc63 = $(`<div id="html_d8b9784d47b4db7dfcbf4a923e03fc63" style="width: 100.0%; height: 100.0%;"><b>Caminhão:</b> NOL 2802<br><b>Velocidade:</b> 7 km/h<br><b>Última Atualização:</b> Não informada</div>`)[0];
+                popup_7fd93e3232a4612a0f40ac49e0513eb2.setContent(html_d8b9784d47b4db7dfcbf4a923e03fc63);
+            
+        
+
+        marker_b56d9e0193ffa10eede1ded8dd972268.bindPopup(popup_7fd93e3232a4612a0f40ac49e0513eb2)
+        ;
+
+        
+    
+    
+            marker_b56d9e0193ffa10eede1ded8dd972268.bindTooltip(
+                `<div>
+                     Placa: NOL 2802
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b56d9e0193ffa10eede1ded8dd972268.setIcon(icon_37bdc1d30f3f3010dc0cbba95a2e1251);
+            
+    
+            var marker_389181b3a9c0b0e6a4a3cc735f143a27 = L.marker(
+                [-1.600975, -52.681316],
+                {
+}
+            ).addTo(map_f5b9670526c639adee3d137044c63bf6);
+        
+    
+            var icon_01e80cec5a8683b6112089d914dbad8c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "truck",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_659d4bafbf0a01396784b6bd069bf4c6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a3d810e057b2f7d55ed1c60e16870999 = $(`<div id="html_a3d810e057b2f7d55ed1c60e16870999" style="width: 100.0%; height: 100.0%;"><b>Caminhão:</b> JXU 3061 S<br><b>Velocidade:</b> 9 km/h<br><b>Última Atualização:</b> Não informada</div>`)[0];
+                popup_659d4bafbf0a01396784b6bd069bf4c6.setContent(html_a3d810e057b2f7d55ed1c60e16870999);
+            
+        
+
+        marker_389181b3a9c0b0e6a4a3cc735f143a27.bindPopup(popup_659d4bafbf0a01396784b6bd069bf4c6)
+        ;
+
+        
+    
+    
+            marker_389181b3a9c0b0e6a4a3cc735f143a27.bindTooltip(
+                `<div>
+                     Placa: JXU 3061 S
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_389181b3a9c0b0e6a4a3cc735f143a27.setIcon(icon_01e80cec5a8683b6112089d914dbad8c);
+            
+    
+            var marker_8038467bb3352b9aaae2412b58501b2c = L.marker(
+                [-22.995618, -47.129831],
+                {
+}
+            ).addTo(map_f5b9670526c639adee3d137044c63bf6);
+        
+    
+            var icon_c310e0dfc8963142c2547966d60fa51c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "truck",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1113e323f86d506debe9919278a58554 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_99b44202dd1d8e9d04972fe2af2e77db = $(`<div id="html_99b44202dd1d8e9d04972fe2af2e77db" style="width: 100.0%; height: 100.0%;"><b>Caminhão:</b> JXW 4385<br><b>Velocidade:</b> 0 km/h<br><b>Última Atualização:</b> Não informada</div>`)[0];
+                popup_1113e323f86d506debe9919278a58554.setContent(html_99b44202dd1d8e9d04972fe2af2e77db);
+            
+        
+
+        marker_8038467bb3352b9aaae2412b58501b2c.bindPopup(popup_1113e323f86d506debe9919278a58554)
+        ;
+
+        
+    
+    
+            marker_8038467bb3352b9aaae2412b58501b2c.bindTooltip(
+                `<div>
+                     Placa: JXW 4385
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8038467bb3352b9aaae2412b58501b2c.setIcon(icon_c310e0dfc8963142c2547966d60fa51c);
+            
+    
+            var marker_77b1f03b6fbab6fe23e59c9b7c003beb = L.marker(
+                [-22.995893, -47.129631],
+                {
+}
+            ).addTo(map_f5b9670526c639adee3d137044c63bf6);
+        
+    
+            var icon_02638187720d92e9d1a599737582556c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "truck",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3a12b27b109f6ab3415d7d2a89eddefa = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ec4bec546ce4873dd7491a0199bc9dc4 = $(`<div id="html_ec4bec546ce4873dd7491a0199bc9dc4" style="width: 100.0%; height: 100.0%;"><b>Caminhão:</b> NOS 8903<br><b>Velocidade:</b> 0 km/h<br><b>Última Atualização:</b> Não informada</div>`)[0];
+                popup_3a12b27b109f6ab3415d7d2a89eddefa.setContent(html_ec4bec546ce4873dd7491a0199bc9dc4);
+            
+        
+
+        marker_77b1f03b6fbab6fe23e59c9b7c003beb.bindPopup(popup_3a12b27b109f6ab3415d7d2a89eddefa)
+        ;
+
+        
+    
+    
+            marker_77b1f03b6fbab6fe23e59c9b7c003beb.bindTooltip(
+                `<div>
+                     Placa: NOS 8903
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_77b1f03b6fbab6fe23e59c9b7c003beb.setIcon(icon_02638187720d92e9d1a599737582556c);
+            
+    
+            var marker_12eb9b2e79fda0c98833b286a13d42ac = L.marker(
+                [-1.355887, -48.479102],
+                {
+}
+            ).addTo(map_f5b9670526c639adee3d137044c63bf6);
+        
+    
+            var icon_db80a7e93d64c5145664819828fdd905 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "truck",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_eee6596e309a23c33abb1615ccb4dbb6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0a94045130ca9ae43fb9cfe8ab81ad41 = $(`<div id="html_0a94045130ca9ae43fb9cfe8ab81ad41" style="width: 100.0%; height: 100.0%;"><b>Caminhão:</b> JXQ 6153<br><b>Velocidade:</b> 0 km/h<br><b>Última Atualização:</b> Não informada</div>`)[0];
+                popup_eee6596e309a23c33abb1615ccb4dbb6.setContent(html_0a94045130ca9ae43fb9cfe8ab81ad41);
+            
+        
+
+        marker_12eb9b2e79fda0c98833b286a13d42ac.bindPopup(popup_eee6596e309a23c33abb1615ccb4dbb6)
+        ;
+
+        
+    
+    
+            marker_12eb9b2e79fda0c98833b286a13d42ac.bindTooltip(
+                `<div>
+                     Placa: JXQ 6153
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_12eb9b2e79fda0c98833b286a13d42ac.setIcon(icon_db80a7e93d64c5145664819828fdd905);
+            
+    
+            var marker_1ecea361c61a18c98ae5ae73ed9b29d7 = L.marker(
+                [-1.378565, -48.401941],
+                {
+}
+            ).addTo(map_f5b9670526c639adee3d137044c63bf6);
+        
+    
+            var icon_2b57f027c92e6d31b250823c867646ea = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "truck",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a9e776a9fc978a284def9aa0cc4e35c1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b3d901950c8d3ce4397a893f817f954f = $(`<div id="html_b3d901950c8d3ce4397a893f817f954f" style="width: 100.0%; height: 100.0%;"><b>Caminhão:</b> OAI 0190<br><b>Velocidade:</b> 0 km/h<br><b>Última Atualização:</b> Não informada</div>`)[0];
+                popup_a9e776a9fc978a284def9aa0cc4e35c1.setContent(html_b3d901950c8d3ce4397a893f817f954f);
+            
+        
+
+        marker_1ecea361c61a18c98ae5ae73ed9b29d7.bindPopup(popup_a9e776a9fc978a284def9aa0cc4e35c1)
+        ;
+
+        
+    
+    
+            marker_1ecea361c61a18c98ae5ae73ed9b29d7.bindTooltip(
+                `<div>
+                     Placa: OAI 0190
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1ecea361c61a18c98ae5ae73ed9b29d7.setIcon(icon_2b57f027c92e6d31b250823c867646ea);
+            
+    
+            var marker_889955f407c807948f0ba17894c2ae2a = L.marker(
+                [-22.99586, -47.129604],
+                {
+}
+            ).addTo(map_f5b9670526c639adee3d137044c63bf6);
+        
+    
+            var icon_582ff0a37ca4da14d96de4ee69ced60d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "truck",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5e0224c0b5f9f182dbdb5161de807b79 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_38ea35dbff31e4090c1f8dbf76d86601 = $(`<div id="html_38ea35dbff31e4090c1f8dbf76d86601" style="width: 100.0%; height: 100.0%;"><b>Caminhão:</b> JXB 7411<br><b>Velocidade:</b> 0 km/h<br><b>Última Atualização:</b> Não informada</div>`)[0];
+                popup_5e0224c0b5f9f182dbdb5161de807b79.setContent(html_38ea35dbff31e4090c1f8dbf76d86601);
+            
+        
+
+        marker_889955f407c807948f0ba17894c2ae2a.bindPopup(popup_5e0224c0b5f9f182dbdb5161de807b79)
+        ;
+
+        
+    
+    
+            marker_889955f407c807948f0ba17894c2ae2a.bindTooltip(
+                `<div>
+                     Placa: JXB 7411
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_889955f407c807948f0ba17894c2ae2a.setIcon(icon_582ff0a37ca4da14d96de4ee69ced60d);
+            
+    
+            var marker_80f385b5242ee7036cdf84bcd6a8a8df = L.marker(
+                [-3.122117, -59.97988],
+                {
+}
+            ).addTo(map_f5b9670526c639adee3d137044c63bf6);
+        
+    
+            var icon_6f7bf11d1073fa2f15ca13de8557db5e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "truck",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7bd72ff02a5cdb7e5564571485df5308 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6d8ed55dbe249e61c54697af4c3f2c08 = $(`<div id="html_6d8ed55dbe249e61c54697af4c3f2c08" style="width: 100.0%; height: 100.0%;"><b>Caminhão:</b> JXB 6621<br><b>Velocidade:</b> 0 km/h<br><b>Última Atualização:</b> Não informada</div>`)[0];
+                popup_7bd72ff02a5cdb7e5564571485df5308.setContent(html_6d8ed55dbe249e61c54697af4c3f2c08);
+            
+        
+
+        marker_80f385b5242ee7036cdf84bcd6a8a8df.bindPopup(popup_7bd72ff02a5cdb7e5564571485df5308)
+        ;
+
+        
+    
+    
+            marker_80f385b5242ee7036cdf84bcd6a8a8df.bindTooltip(
+                `<div>
+                     Placa: JXB 6621
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_80f385b5242ee7036cdf84bcd6a8a8df.setIcon(icon_6f7bf11d1073fa2f15ca13de8557db5e);
+            
+    
+            var marker_850ad9242d4c4f18ac1b0d6b8f88c142 = L.marker(
+                [-3.122358, -59.979649],
+                {
+}
+            ).addTo(map_f5b9670526c639adee3d137044c63bf6);
+        
+    
+            var icon_3ed3f54b21a7c6bd88e5c317cc0bd1db = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "truck",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cd532c840926c2d987bbc98d438a73eb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2525c12e61e03d8a6fce19f1c31726f9 = $(`<div id="html_2525c12e61e03d8a6fce19f1c31726f9" style="width: 100.0%; height: 100.0%;"><b>Caminhão:</b> OAJ 0690 S<br><b>Velocidade:</b> 0 km/h<br><b>Última Atualização:</b> Não informada</div>`)[0];
+                popup_cd532c840926c2d987bbc98d438a73eb.setContent(html_2525c12e61e03d8a6fce19f1c31726f9);
+            
+        
+
+        marker_850ad9242d4c4f18ac1b0d6b8f88c142.bindPopup(popup_cd532c840926c2d987bbc98d438a73eb)
+        ;
+
+        
+    
+    
+            marker_850ad9242d4c4f18ac1b0d6b8f88c142.bindTooltip(
+                `<div>
+                     Placa: OAJ 0690 S
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_850ad9242d4c4f18ac1b0d6b8f88c142.setIcon(icon_3ed3f54b21a7c6bd88e5c317cc0bd1db);
+            
+    
+            var marker_bccdbd52039b4a920026f3f053f48f72 = L.marker(
+                [-3.122142, -59.979924],
+                {
+}
+            ).addTo(map_f5b9670526c639adee3d137044c63bf6);
+        
+    
+            var icon_656839e53151d1cc8a07b02c575bcb57 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "truck",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2cc89112e1ee1d6f549f9eca03751d9f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a4ff29344993de00b8bee82555938c18 = $(`<div id="html_a4ff29344993de00b8bee82555938c18" style="width: 100.0%; height: 100.0%;"><b>Caminhão:</b> JXJ 3482<br><b>Velocidade:</b> 0 km/h<br><b>Última Atualização:</b> Não informada</div>`)[0];
+                popup_2cc89112e1ee1d6f549f9eca03751d9f.setContent(html_a4ff29344993de00b8bee82555938c18);
+            
+        
+
+        marker_bccdbd52039b4a920026f3f053f48f72.bindPopup(popup_2cc89112e1ee1d6f549f9eca03751d9f)
+        ;
+
+        
+    
+    
+            marker_bccdbd52039b4a920026f3f053f48f72.bindTooltip(
+                `<div>
+                     Placa: JXJ 3482
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_bccdbd52039b4a920026f3f053f48f72.setIcon(icon_656839e53151d1cc8a07b02c575bcb57);
+            
+    
+            var marker_94ee63e6dbb23fdefa43f97b8681f2f9 = L.marker(
+                [-3.105207, -60.068547],
+                {
+}
+            ).addTo(map_f5b9670526c639adee3d137044c63bf6);
+        
+    
+            var icon_57e5409954a73da9cc707512d4df9e36 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "truck",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_19acd8816b5894742fe11e865f90b7e8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_af573bdec2716c6eea567cc671eb7518 = $(`<div id="html_af573bdec2716c6eea567cc671eb7518" style="width: 100.0%; height: 100.0%;"><b>Caminhão:</b> OAD 2547<br><b>Velocidade:</b> 0 km/h<br><b>Última Atualização:</b> Não informada</div>`)[0];
+                popup_19acd8816b5894742fe11e865f90b7e8.setContent(html_af573bdec2716c6eea567cc671eb7518);
+            
+        
+
+        marker_94ee63e6dbb23fdefa43f97b8681f2f9.bindPopup(popup_19acd8816b5894742fe11e865f90b7e8)
+        ;
+
+        
+    
+    
+            marker_94ee63e6dbb23fdefa43f97b8681f2f9.bindTooltip(
+                `<div>
+                     Placa: OAD 2547
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_94ee63e6dbb23fdefa43f97b8681f2f9.setIcon(icon_57e5409954a73da9cc707512d4df9e36);
+            
+    
+            var marker_cee328c58e1d7bb0c5ae0bf958dac2cf = L.marker(
+                [-3.105138, -60.068516],
+                {
+}
+            ).addTo(map_f5b9670526c639adee3d137044c63bf6);
+        
+    
+            var icon_bced5b7480dff4b1b5b24cdf3fed0e2b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "truck",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ae73dd23a63dd86278a12a0cd91bcaf5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a1d022faaec97332518016c72f3e05de = $(`<div id="html_a1d022faaec97332518016c72f3e05de" style="width: 100.0%; height: 100.0%;"><b>Caminhão:</b> OAD 2587<br><b>Velocidade:</b> 0 km/h<br><b>Última Atualização:</b> Não informada</div>`)[0];
+                popup_ae73dd23a63dd86278a12a0cd91bcaf5.setContent(html_a1d022faaec97332518016c72f3e05de);
+            
+        
+
+        marker_cee328c58e1d7bb0c5ae0bf958dac2cf.bindPopup(popup_ae73dd23a63dd86278a12a0cd91bcaf5)
+        ;
+
+        
+    
+    
+            marker_cee328c58e1d7bb0c5ae0bf958dac2cf.bindTooltip(
+                `<div>
+                     Placa: OAD 2587
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_cee328c58e1d7bb0c5ae0bf958dac2cf.setIcon(icon_bced5b7480dff4b1b5b24cdf3fed0e2b);
+            
+    
+            var marker_a06a05bc27416eee784b9ac3ae890c97 = L.marker(
+                [-3.121696, -59.979013],
+                {
+}
+            ).addTo(map_f5b9670526c639adee3d137044c63bf6);
+        
+    
+            var icon_1daaee9d2c05055d361f73d9f330bfdf = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "truck",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0c8b95ff6770ab48db8c01dce1a4d92e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c19e387edb60aa4fbe312885f8f53ec6 = $(`<div id="html_c19e387edb60aa4fbe312885f8f53ec6" style="width: 100.0%; height: 100.0%;"><b>Caminhão:</b> JXJ 3396<br><b>Velocidade:</b> 0 km/h<br><b>Última Atualização:</b> Não informada</div>`)[0];
+                popup_0c8b95ff6770ab48db8c01dce1a4d92e.setContent(html_c19e387edb60aa4fbe312885f8f53ec6);
+            
+        
+
+        marker_a06a05bc27416eee784b9ac3ae890c97.bindPopup(popup_0c8b95ff6770ab48db8c01dce1a4d92e)
+        ;
+
+        
+    
+    
+            marker_a06a05bc27416eee784b9ac3ae890c97.bindTooltip(
+                `<div>
+                     Placa: JXJ 3396
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a06a05bc27416eee784b9ac3ae890c97.setIcon(icon_1daaee9d2c05055d361f73d9f330bfdf);
+            
+    
+            var marker_292fc7b98422ff1b3c4cd670fd8e4dbe = L.marker(
+                [-22.995756, -47.130262],
+                {
+}
+            ).addTo(map_f5b9670526c639adee3d137044c63bf6);
+        
+    
+            var icon_d35d16cfcbc38efd1a39400ee279715b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "truck",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0c4489de24408fe4cf34db7be63c0a30 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f9f695da3ddf7132be0917edbeca1325 = $(`<div id="html_f9f695da3ddf7132be0917edbeca1325" style="width: 100.0%; height: 100.0%;"><b>Caminhão:</b> JXJ 3542<br><b>Velocidade:</b> 0 km/h<br><b>Última Atualização:</b> Não informada</div>`)[0];
+                popup_0c4489de24408fe4cf34db7be63c0a30.setContent(html_f9f695da3ddf7132be0917edbeca1325);
+            
+        
+
+        marker_292fc7b98422ff1b3c4cd670fd8e4dbe.bindPopup(popup_0c4489de24408fe4cf34db7be63c0a30)
+        ;
+
+        
+    
+    
+            marker_292fc7b98422ff1b3c4cd670fd8e4dbe.bindTooltip(
+                `<div>
+                     Placa: JXJ 3542
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_292fc7b98422ff1b3c4cd670fd8e4dbe.setIcon(icon_d35d16cfcbc38efd1a39400ee279715b);
+            
+    
+            var marker_fae1a06d498f934623b723687492cd91 = L.marker(
+                [-22.993684, -47.1302],
+                {
+}
+            ).addTo(map_f5b9670526c639adee3d137044c63bf6);
+        
+    
+            var icon_a2d35d3df29a011ba88d97442d5a273b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "truck",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2f7659aabe095ba76b462d786499969c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_80bf1ca6c17179275cbb3390aa761750 = $(`<div id="html_80bf1ca6c17179275cbb3390aa761750" style="width: 100.0%; height: 100.0%;"><b>Caminhão:</b> NOR 0075<br><b>Velocidade:</b> 0 km/h<br><b>Última Atualização:</b> Não informada</div>`)[0];
+                popup_2f7659aabe095ba76b462d786499969c.setContent(html_80bf1ca6c17179275cbb3390aa761750);
+            
+        
+
+        marker_fae1a06d498f934623b723687492cd91.bindPopup(popup_2f7659aabe095ba76b462d786499969c)
+        ;
+
+        
+    
+    
+            marker_fae1a06d498f934623b723687492cd91.bindTooltip(
+                `<div>
+                     Placa: NOR 0075
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_fae1a06d498f934623b723687492cd91.setIcon(icon_a2d35d3df29a011ba88d97442d5a273b);
+            
+    
+            var marker_5b72db902a5e18b6b587f07490897fa4 = L.marker(
+                [-22.993924, -47.130378],
+                {
+}
+            ).addTo(map_f5b9670526c639adee3d137044c63bf6);
+        
+    
+            var icon_70aa430f813d667e36104ea25438a1d8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "truck",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2c75cf052f7f1231dc97a71e786eb7e2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0ed19c7801d8ef92a3e85ab2ed8ce38a = $(`<div id="html_0ed19c7801d8ef92a3e85ab2ed8ce38a" style="width: 100.0%; height: 100.0%;"><b>Caminhão:</b> JXS 8936<br><b>Velocidade:</b> 0 km/h<br><b>Última Atualização:</b> Não informada</div>`)[0];
+                popup_2c75cf052f7f1231dc97a71e786eb7e2.setContent(html_0ed19c7801d8ef92a3e85ab2ed8ce38a);
+            
+        
+
+        marker_5b72db902a5e18b6b587f07490897fa4.bindPopup(popup_2c75cf052f7f1231dc97a71e786eb7e2)
+        ;
+
+        
+    
+    
+            marker_5b72db902a5e18b6b587f07490897fa4.bindTooltip(
+                `<div>
+                     Placa: JXS 8936
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5b72db902a5e18b6b587f07490897fa4.setIcon(icon_70aa430f813d667e36104ea25438a1d8);
+            
+    
+            var marker_d2e4a30316f21f0aac1f1140138602a0 = L.marker(
+                [-3.157179, -59.994142],
+                {
+}
+            ).addTo(map_f5b9670526c639adee3d137044c63bf6);
+        
+    
+            var icon_97ecf40491c8eacb190937f1b263c000 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "truck",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ccd7f543fc4dcec2d92c8fc16fa50143 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0197bbb6a4a204c2b5d27d64e484dca4 = $(`<div id="html_0197bbb6a4a204c2b5d27d64e484dca4" style="width: 100.0%; height: 100.0%;"><b>Caminhão:</b> JXM 8824<br><b>Velocidade:</b> 0 km/h<br><b>Última Atualização:</b> Não informada</div>`)[0];
+                popup_ccd7f543fc4dcec2d92c8fc16fa50143.setContent(html_0197bbb6a4a204c2b5d27d64e484dca4);
+            
+        
+
+        marker_d2e4a30316f21f0aac1f1140138602a0.bindPopup(popup_ccd7f543fc4dcec2d92c8fc16fa50143)
+        ;
+
+        
+    
+    
+            marker_d2e4a30316f21f0aac1f1140138602a0.bindTooltip(
+                `<div>
+                     Placa: JXM 8824
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d2e4a30316f21f0aac1f1140138602a0.setIcon(icon_97ecf40491c8eacb190937f1b263c000);
+            
+    
+            var marker_d053940a35536a44892b88ddd0f5a6ee = L.marker(
+                [-3.157168, -59.99392],
+                {
+}
+            ).addTo(map_f5b9670526c639adee3d137044c63bf6);
+        
+    
+            var icon_aa2d01da0122f686febf769facbb413a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "truck",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_685e1221669f89a836648234155d1a3b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_de0d24929e19335cb90f4eb262a457ad = $(`<div id="html_de0d24929e19335cb90f4eb262a457ad" style="width: 100.0%; height: 100.0%;"><b>Caminhão:</b> JXI 7553<br><b>Velocidade:</b> 0 km/h<br><b>Última Atualização:</b> Não informada</div>`)[0];
+                popup_685e1221669f89a836648234155d1a3b.setContent(html_de0d24929e19335cb90f4eb262a457ad);
+            
+        
+
+        marker_d053940a35536a44892b88ddd0f5a6ee.bindPopup(popup_685e1221669f89a836648234155d1a3b)
+        ;
+
+        
+    
+    
+            marker_d053940a35536a44892b88ddd0f5a6ee.bindTooltip(
+                `<div>
+                     Placa: JXI 7553
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d053940a35536a44892b88ddd0f5a6ee.setIcon(icon_aa2d01da0122f686febf769facbb413a);
+            
+    
+            var marker_982a25160a2e19c41c42b17758303c81 = L.marker(
+                [-1.356738, -48.481174],
+                {
+}
+            ).addTo(map_f5b9670526c639adee3d137044c63bf6);
+        
+    
+            var icon_009f1fecd8ee34c704dcbb7363b81039 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "truck",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c07e8b357c8216cb1baeb206882bdb79 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_078fd1f1496746c22624cf4f553aca2f = $(`<div id="html_078fd1f1496746c22624cf4f553aca2f" style="width: 100.0%; height: 100.0%;"><b>Caminhão:</b> JXW 3651<br><b>Velocidade:</b> 0 km/h<br><b>Última Atualização:</b> Não informada</div>`)[0];
+                popup_c07e8b357c8216cb1baeb206882bdb79.setContent(html_078fd1f1496746c22624cf4f553aca2f);
+            
+        
+
+        marker_982a25160a2e19c41c42b17758303c81.bindPopup(popup_c07e8b357c8216cb1baeb206882bdb79)
+        ;
+
+        
+    
+    
+            marker_982a25160a2e19c41c42b17758303c81.bindTooltip(
+                `<div>
+                     Placa: JXW 3651
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_982a25160a2e19c41c42b17758303c81.setIcon(icon_009f1fecd8ee34c704dcbb7363b81039);
+            
+    
+            var marker_a2b6b6a5c7da449e1a80ab9ded3bcce3 = L.marker(
+                [-1.936098, -55.512898],
+                {
+}
+            ).addTo(map_f5b9670526c639adee3d137044c63bf6);
+        
+    
+            var icon_85c3bee627880b92cfb9889c15233e69 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "truck",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_dd1a6f6b5235aa68f8738a327c29aab4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b59a88f178845725b93c4baede54ef0d = $(`<div id="html_b59a88f178845725b93c4baede54ef0d" style="width: 100.0%; height: 100.0%;"><b>Caminhão:</b> OAK 2896<br><b>Velocidade:</b> 21 km/h<br><b>Última Atualização:</b> Não informada</div>`)[0];
+                popup_dd1a6f6b5235aa68f8738a327c29aab4.setContent(html_b59a88f178845725b93c4baede54ef0d);
+            
+        
+
+        marker_a2b6b6a5c7da449e1a80ab9ded3bcce3.bindPopup(popup_dd1a6f6b5235aa68f8738a327c29aab4)
+        ;
+
+        
+    
+    
+            marker_a2b6b6a5c7da449e1a80ab9ded3bcce3.bindTooltip(
+                `<div>
+                     Placa: OAK 2896
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a2b6b6a5c7da449e1a80ab9ded3bcce3.setIcon(icon_85c3bee627880b92cfb9889c15233e69);
+            
+    
+            var marker_5bc8e0853f1e797a8a3af721cf9b5bd0 = L.marker(
+                [-3.122157, -59.980111],
+                {
+}
+            ).addTo(map_f5b9670526c639adee3d137044c63bf6);
+        
+    
+            var icon_6b2bf49a2de6d24be5f255f0d6de45a5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "truck",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_86c91311b2f6be89346fb00bc29c0cea = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_74d11c7cb571ae89a053290fbb6527be = $(`<div id="html_74d11c7cb571ae89a053290fbb6527be" style="width: 100.0%; height: 100.0%;"><b>Caminhão:</b> JXE 9672<br><b>Velocidade:</b> 0 km/h<br><b>Última Atualização:</b> Não informada</div>`)[0];
+                popup_86c91311b2f6be89346fb00bc29c0cea.setContent(html_74d11c7cb571ae89a053290fbb6527be);
+            
+        
+
+        marker_5bc8e0853f1e797a8a3af721cf9b5bd0.bindPopup(popup_86c91311b2f6be89346fb00bc29c0cea)
+        ;
+
+        
+    
+    
+            marker_5bc8e0853f1e797a8a3af721cf9b5bd0.bindTooltip(
+                `<div>
+                     Placa: JXE 9672
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5bc8e0853f1e797a8a3af721cf9b5bd0.setIcon(icon_6b2bf49a2de6d24be5f255f0d6de45a5);
+            
+    
+            var marker_f2dce6c1d6148278b3500305f99158fa = L.marker(
+                [-22.996127, -47.130133],
+                {
+}
+            ).addTo(map_f5b9670526c639adee3d137044c63bf6);
+        
+    
+            var icon_2108ff193acc5c9c4b39d053455edcdb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "truck",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c3aea428ba517caad86afcef825e0af7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bee62ac26fb617e0a5c5f62a80020fb3 = $(`<div id="html_bee62ac26fb617e0a5c5f62a80020fb3" style="width: 100.0%; height: 100.0%;"><b>Caminhão:</b> FFL 4921 S<br><b>Velocidade:</b> 0 km/h<br><b>Última Atualização:</b> Não informada</div>`)[0];
+                popup_c3aea428ba517caad86afcef825e0af7.setContent(html_bee62ac26fb617e0a5c5f62a80020fb3);
+            
+        
+
+        marker_f2dce6c1d6148278b3500305f99158fa.bindPopup(popup_c3aea428ba517caad86afcef825e0af7)
+        ;
+
+        
+    
+    
+            marker_f2dce6c1d6148278b3500305f99158fa.bindTooltip(
+                `<div>
+                     Placa: FFL 4921 S
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f2dce6c1d6148278b3500305f99158fa.setIcon(icon_2108ff193acc5c9c4b39d053455edcdb);
+            
+    
+            var marker_8a99392020aac6cbbbb03eceafcfe5ae = L.marker(
+                [-1.220857, -47.199347],
+                {
+}
+            ).addTo(map_f5b9670526c639adee3d137044c63bf6);
+        
+    
+            var icon_49fa5f088f2e4cef0a9b2ab42669bb5a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "truck",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c0ab2f7de84698f46d26120cacb18541 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_70ba006e59096f6bbca4f3dfebb32560 = $(`<div id="html_70ba006e59096f6bbca4f3dfebb32560" style="width: 100.0%; height: 100.0%;"><b>Caminhão:</b> JXE 9712 S<br><b>Velocidade:</b> 70 km/h<br><b>Última Atualização:</b> Não informada</div>`)[0];
+                popup_c0ab2f7de84698f46d26120cacb18541.setContent(html_70ba006e59096f6bbca4f3dfebb32560);
+            
+        
+
+        marker_8a99392020aac6cbbbb03eceafcfe5ae.bindPopup(popup_c0ab2f7de84698f46d26120cacb18541)
+        ;
+
+        
+    
+    
+            marker_8a99392020aac6cbbbb03eceafcfe5ae.bindTooltip(
+                `<div>
+                     Placa: JXE 9712 S
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8a99392020aac6cbbbb03eceafcfe5ae.setIcon(icon_49fa5f088f2e4cef0a9b2ab42669bb5a);
+            
+    
+            var marker_b780157778b575a4c37e69522499ea5a = L.marker(
+                [-1.355878, -48.479982],
+                {
+}
+            ).addTo(map_f5b9670526c639adee3d137044c63bf6);
+        
+    
+            var icon_13bcec735e841f01c7fa3dc926d2e5ef = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "truck",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_df0e3fda34f76cdbe8911b80fae966fe = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_79d1eb395b40dee3eaa6e855de0c7a88 = $(`<div id="html_79d1eb395b40dee3eaa6e855de0c7a88" style="width: 100.0%; height: 100.0%;"><b>Caminhão:</b> JXU 8855<br><b>Velocidade:</b> 0 km/h<br><b>Última Atualização:</b> Não informada</div>`)[0];
+                popup_df0e3fda34f76cdbe8911b80fae966fe.setContent(html_79d1eb395b40dee3eaa6e855de0c7a88);
+            
+        
+
+        marker_b780157778b575a4c37e69522499ea5a.bindPopup(popup_df0e3fda34f76cdbe8911b80fae966fe)
+        ;
+
+        
+    
+    
+            marker_b780157778b575a4c37e69522499ea5a.bindTooltip(
+                `<div>
+                     Placa: JXU 8855
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b780157778b575a4c37e69522499ea5a.setIcon(icon_13bcec735e841f01c7fa3dc926d2e5ef);
+            
+    
+            var marker_17a349ac1d6b238b05ea057c5e0cd63e = L.marker(
+                [-2.364945, -54.688476],
+                {
+}
+            ).addTo(map_f5b9670526c639adee3d137044c63bf6);
+        
+    
+            var icon_81e885991f981c94c3a859bad06ba030 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "truck",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a0a5f1cc1bc30207cbf7746ba0c3d559 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b894cd42cccd0b896636f0922200fcdc = $(`<div id="html_b894cd42cccd0b896636f0922200fcdc" style="width: 100.0%; height: 100.0%;"><b>Caminhão:</b> NOL 3919<br><b>Velocidade:</b> 10 km/h<br><b>Última Atualização:</b> Não informada</div>`)[0];
+                popup_a0a5f1cc1bc30207cbf7746ba0c3d559.setContent(html_b894cd42cccd0b896636f0922200fcdc);
+            
+        
+
+        marker_17a349ac1d6b238b05ea057c5e0cd63e.bindPopup(popup_a0a5f1cc1bc30207cbf7746ba0c3d559)
+        ;
+
+        
+    
+    
+            marker_17a349ac1d6b238b05ea057c5e0cd63e.bindTooltip(
+                `<div>
+                     Placa: NOL 3919
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_17a349ac1d6b238b05ea057c5e0cd63e.setIcon(icon_81e885991f981c94c3a859bad06ba030);
+            
+    
+            var marker_85ecddc32796a7ec66ada1d4c91de0a3 = L.marker(
+                [-0.014652, -51.202342],
+                {
+}
+            ).addTo(map_f5b9670526c639adee3d137044c63bf6);
+        
+    
+            var icon_ef4e0c7034844941f19e1d6b62eb62eb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "truck",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_06487f1baf053a06690ef0fe5c88b218 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_702d1cb740a83b4d03bc92b595455cd3 = $(`<div id="html_702d1cb740a83b4d03bc92b595455cd3" style="width: 100.0%; height: 100.0%;"><b>Caminhão:</b> JXU 2145<br><b>Velocidade:</b> 0 km/h<br><b>Última Atualização:</b> Não informada</div>`)[0];
+                popup_06487f1baf053a06690ef0fe5c88b218.setContent(html_702d1cb740a83b4d03bc92b595455cd3);
+            
+        
+
+        marker_85ecddc32796a7ec66ada1d4c91de0a3.bindPopup(popup_06487f1baf053a06690ef0fe5c88b218)
+        ;
+
+        
+    
+    
+            marker_85ecddc32796a7ec66ada1d4c91de0a3.bindTooltip(
+                `<div>
+                     Placa: JXU 2145
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_85ecddc32796a7ec66ada1d4c91de0a3.setIcon(icon_ef4e0c7034844941f19e1d6b62eb62eb);
+            
+    
+            var marker_8ec97d4fda4b806535713c4c6f4043a5 = L.marker(
+                [-1.337323, -47.904116],
+                {
+}
+            ).addTo(map_f5b9670526c639adee3d137044c63bf6);
+        
+    
+            var icon_bef17b3ca456b6aefd71418d0710a247 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "truck",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_92da60e0faa09c80d1e288660f8096c8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9102bd59f1769b0f46db23106e9f6405 = $(`<div id="html_9102bd59f1769b0f46db23106e9f6405" style="width: 100.0%; height: 100.0%;"><b>Caminhão:</b> OAG 5880<br><b>Velocidade:</b> 0 km/h<br><b>Última Atualização:</b> Não informada</div>`)[0];
+                popup_92da60e0faa09c80d1e288660f8096c8.setContent(html_9102bd59f1769b0f46db23106e9f6405);
+            
+        
+
+        marker_8ec97d4fda4b806535713c4c6f4043a5.bindPopup(popup_92da60e0faa09c80d1e288660f8096c8)
+        ;
+
+        
+    
+    
+            marker_8ec97d4fda4b806535713c4c6f4043a5.bindTooltip(
+                `<div>
+                     Placa: OAG 5880
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8ec97d4fda4b806535713c4c6f4043a5.setIcon(icon_bef17b3ca456b6aefd71418d0710a247);
+            
+    
+            var marker_fac9bdbf5a9e8c598bd1e3d7fff3557c = L.marker(
+                [-1.813943, -49.927302],
+                {
+}
+            ).addTo(map_f5b9670526c639adee3d137044c63bf6);
+        
+    
+            var icon_cdcd8e2c2520d8eafe639ea803df8fb0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "truck",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c99c5f644682b57b3d3f12f88187fc72 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_06b43baa155bf90b1fa91993e0669e14 = $(`<div id="html_06b43baa155bf90b1fa91993e0669e14" style="width: 100.0%; height: 100.0%;"><b>Caminhão:</b> JXJ 9632<br><b>Velocidade:</b> 16 km/h<br><b>Última Atualização:</b> Não informada</div>`)[0];
+                popup_c99c5f644682b57b3d3f12f88187fc72.setContent(html_06b43baa155bf90b1fa91993e0669e14);
+            
+        
+
+        marker_fac9bdbf5a9e8c598bd1e3d7fff3557c.bindPopup(popup_c99c5f644682b57b3d3f12f88187fc72)
+        ;
+
+        
+    
+    
+            marker_fac9bdbf5a9e8c598bd1e3d7fff3557c.bindTooltip(
+                `<div>
+                     Placa: JXJ 9632
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_fac9bdbf5a9e8c598bd1e3d7fff3557c.setIcon(icon_cdcd8e2c2520d8eafe639ea803df8fb0);
+            
+    
+            var marker_b4e26910c8d552c046eeacaaafd75d4d = L.marker(
+                [-23.356429, -46.853693],
+                {
+}
+            ).addTo(map_f5b9670526c639adee3d137044c63bf6);
+        
+    
+            var icon_0174882d3d3603f336d8b400d2b9a803 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "truck",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_98369dbc75c415cc7cdabd14fecdff72 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f093fcbf8d3bd29c18d67ee7aadb9370 = $(`<div id="html_f093fcbf8d3bd29c18d67ee7aadb9370" style="width: 100.0%; height: 100.0%;"><b>Caminhão:</b> NOP 4124 S<br><b>Velocidade:</b> 0 km/h<br><b>Última Atualização:</b> Não informada</div>`)[0];
+                popup_98369dbc75c415cc7cdabd14fecdff72.setContent(html_f093fcbf8d3bd29c18d67ee7aadb9370);
+            
+        
+
+        marker_b4e26910c8d552c046eeacaaafd75d4d.bindPopup(popup_98369dbc75c415cc7cdabd14fecdff72)
+        ;
+
+        
+    
+    
+            marker_b4e26910c8d552c046eeacaaafd75d4d.bindTooltip(
+                `<div>
+                     Placa: NOP 4124 S
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b4e26910c8d552c046eeacaaafd75d4d.setIcon(icon_0174882d3d3603f336d8b400d2b9a803);
+            
+    
+            var marker_addf6b82ee7135711cd842907305f84c = L.marker(
+                [-12.740849, -38.317502],
+                {
+}
+            ).addTo(map_f5b9670526c639adee3d137044c63bf6);
+        
+    
+            var icon_8982d59a52ddd5ebcb98c17b658b8ab7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "truck",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9628779143529e5b18791461ea34999b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a0e65eb070f5adbfefa2b69c70921930 = $(`<div id="html_a0e65eb070f5adbfefa2b69c70921930" style="width: 100.0%; height: 100.0%;"><b>Caminhão:</b> NOJ 0280<br><b>Velocidade:</b> 0 km/h<br><b>Última Atualização:</b> Não informada</div>`)[0];
+                popup_9628779143529e5b18791461ea34999b.setContent(html_a0e65eb070f5adbfefa2b69c70921930);
+            
+        
+
+        marker_addf6b82ee7135711cd842907305f84c.bindPopup(popup_9628779143529e5b18791461ea34999b)
+        ;
+
+        
+    
+    
+            marker_addf6b82ee7135711cd842907305f84c.bindTooltip(
+                `<div>
+                     Placa: NOJ 0280
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_addf6b82ee7135711cd842907305f84c.setIcon(icon_8982d59a52ddd5ebcb98c17b658b8ab7);
+            
+    
+            var marker_cbc20f07558f8db1d43a6e8891b6eebd = L.marker(
+                [-2.986263, -47.45548],
+                {
+}
+            ).addTo(map_f5b9670526c639adee3d137044c63bf6);
+        
+    
+            var icon_237a298dc40ed83382ab25c8bbb9ce62 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "truck",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d3a387a325fcf1eb39ec5a30832001c1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0f878b9a363379daca83394aaf591917 = $(`<div id="html_0f878b9a363379daca83394aaf591917" style="width: 100.0%; height: 100.0%;"><b>Caminhão:</b> NON 8775<br><b>Velocidade:</b> 0 km/h<br><b>Última Atualização:</b> Não informada</div>`)[0];
+                popup_d3a387a325fcf1eb39ec5a30832001c1.setContent(html_0f878b9a363379daca83394aaf591917);
+            
+        
+
+        marker_cbc20f07558f8db1d43a6e8891b6eebd.bindPopup(popup_d3a387a325fcf1eb39ec5a30832001c1)
+        ;
+
+        
+    
+    
+            marker_cbc20f07558f8db1d43a6e8891b6eebd.bindTooltip(
+                `<div>
+                     Placa: NON 8775
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_cbc20f07558f8db1d43a6e8891b6eebd.setIcon(icon_237a298dc40ed83382ab25c8bbb9ce62);
+            
+    
+            var marker_be83aa27366c4faaa79c0881a1eebc01 = L.marker(
+                [-0.014577, -51.202311],
+                {
+}
+            ).addTo(map_f5b9670526c639adee3d137044c63bf6);
+        
+    
+            var icon_83a1903ef2a1e00c1820bf9ad7c27e56 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "truck",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9aa63e7a237e3f862d986a552e1a7d53 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cff283eaad7bd1e314ff4c248ca0495a = $(`<div id="html_cff283eaad7bd1e314ff4c248ca0495a" style="width: 100.0%; height: 100.0%;"><b>Caminhão:</b> NOS 8913<br><b>Velocidade:</b> 0 km/h<br><b>Última Atualização:</b> Não informada</div>`)[0];
+                popup_9aa63e7a237e3f862d986a552e1a7d53.setContent(html_cff283eaad7bd1e314ff4c248ca0495a);
+            
+        
+
+        marker_be83aa27366c4faaa79c0881a1eebc01.bindPopup(popup_9aa63e7a237e3f862d986a552e1a7d53)
+        ;
+
+        
+    
+    
+            marker_be83aa27366c4faaa79c0881a1eebc01.bindTooltip(
+                `<div>
+                     Placa: NOS 8913
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_be83aa27366c4faaa79c0881a1eebc01.setIcon(icon_83a1903ef2a1e00c1820bf9ad7c27e56);
+            
+    
+            var marker_9c527604c4a5037987f6695a15efc1c3 = L.marker(
+                [-3.121387, -59.979493],
+                {
+}
+            ).addTo(map_f5b9670526c639adee3d137044c63bf6);
+        
+    
+            var icon_7f2a70aa6090dc9f115838ee69f7d157 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "truck",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_692cb4ac755fe22734fd9e57fc72bb8b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ffb6e10a9634079173ed455a46e885cf = $(`<div id="html_ffb6e10a9634079173ed455a46e885cf" style="width: 100.0%; height: 100.0%;"><b>Caminhão:</b> JXM 5794<br><b>Velocidade:</b> 0 km/h<br><b>Última Atualização:</b> Não informada</div>`)[0];
+                popup_692cb4ac755fe22734fd9e57fc72bb8b.setContent(html_ffb6e10a9634079173ed455a46e885cf);
+            
+        
+
+        marker_9c527604c4a5037987f6695a15efc1c3.bindPopup(popup_692cb4ac755fe22734fd9e57fc72bb8b)
+        ;
+
+        
+    
+    
+            marker_9c527604c4a5037987f6695a15efc1c3.bindTooltip(
+                `<div>
+                     Placa: JXM 5794
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9c527604c4a5037987f6695a15efc1c3.setIcon(icon_7f2a70aa6090dc9f115838ee69f7d157);
+            
+    
+            var marker_a7ecdb247a55b3ebb4cf861e8d607b8e = L.marker(
+                [-22.995702, -47.129876],
+                {
+}
+            ).addTo(map_f5b9670526c639adee3d137044c63bf6);
+        
+    
+            var icon_f476d835256ef588e618156183445f2e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "truck",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d7d0e78a125c35b73c43da38425c91db = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_85e60bd6206fbe5f301763c0661503a8 = $(`<div id="html_85e60bd6206fbe5f301763c0661503a8" style="width: 100.0%; height: 100.0%;"><b>Caminhão:</b> OAF 6507<br><b>Velocidade:</b> 0 km/h<br><b>Última Atualização:</b> Não informada</div>`)[0];
+                popup_d7d0e78a125c35b73c43da38425c91db.setContent(html_85e60bd6206fbe5f301763c0661503a8);
+            
+        
+
+        marker_a7ecdb247a55b3ebb4cf861e8d607b8e.bindPopup(popup_d7d0e78a125c35b73c43da38425c91db)
+        ;
+
+        
+    
+    
+            marker_a7ecdb247a55b3ebb4cf861e8d607b8e.bindTooltip(
+                `<div>
+                     Placa: OAF 6507
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a7ecdb247a55b3ebb4cf861e8d607b8e.setIcon(icon_f476d835256ef588e618156183445f2e);
+            
+    
+            var marker_5b4c3c20b09b117e2c2dcaee32f8692b = L.marker(
+                [-1.814037, -49.927476],
+                {
+}
+            ).addTo(map_f5b9670526c639adee3d137044c63bf6);
+        
+    
+            var icon_73f69afd938454d13c13aa3ed9414121 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "truck",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3c5962d063b2353c9b0f959308709de8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7dafe6fed8f07d346e3d365150a6f42a = $(`<div id="html_7dafe6fed8f07d346e3d365150a6f42a" style="width: 100.0%; height: 100.0%;"><b>Caminhão:</b> NOP 4614<br><b>Velocidade:</b> 16 km/h<br><b>Última Atualização:</b> Não informada</div>`)[0];
+                popup_3c5962d063b2353c9b0f959308709de8.setContent(html_7dafe6fed8f07d346e3d365150a6f42a);
+            
+        
+
+        marker_5b4c3c20b09b117e2c2dcaee32f8692b.bindPopup(popup_3c5962d063b2353c9b0f959308709de8)
+        ;
+
+        
+    
+    
+            marker_5b4c3c20b09b117e2c2dcaee32f8692b.bindTooltip(
+                `<div>
+                     Placa: NOP 4614
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5b4c3c20b09b117e2c2dcaee32f8692b.setIcon(icon_73f69afd938454d13c13aa3ed9414121);
+            
+    
+            var marker_5c6896056495623e46451b11e1b4d197 = L.marker(
+                [-1.37706, -48.402338],
+                {
+}
+            ).addTo(map_f5b9670526c639adee3d137044c63bf6);
+        
+    
+            var icon_58bd65a37bb12990e3b787cb8694253a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "truck",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_acc383abf9e1665f93f3994c43394bd7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3c23284574163afdb8fd091edb4d36f7 = $(`<div id="html_3c23284574163afdb8fd091edb4d36f7" style="width: 100.0%; height: 100.0%;"><b>Caminhão:</b> NOO 5546<br><b>Velocidade:</b> 0 km/h<br><b>Última Atualização:</b> Não informada</div>`)[0];
+                popup_acc383abf9e1665f93f3994c43394bd7.setContent(html_3c23284574163afdb8fd091edb4d36f7);
+            
+        
+
+        marker_5c6896056495623e46451b11e1b4d197.bindPopup(popup_acc383abf9e1665f93f3994c43394bd7)
+        ;
+
+        
+    
+    
+            marker_5c6896056495623e46451b11e1b4d197.bindTooltip(
+                `<div>
+                     Placa: NOO 5546
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5c6896056495623e46451b11e1b4d197.setIcon(icon_58bd65a37bb12990e3b787cb8694253a);
+            
+    
+            var marker_06ec47308585eb849e975d8086d49e49 = L.marker(
+                [-4.197708, -47.54508],
+                {
+}
+            ).addTo(map_f5b9670526c639adee3d137044c63bf6);
+        
+    
+            var icon_936b09a72642871721ae6d118a1fc2d7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "truck",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b1bab39d7e6e0ff48f58fe34b3592182 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e7e133c15080aedc46b98c5b3b7039ab = $(`<div id="html_e7e133c15080aedc46b98c5b3b7039ab" style="width: 100.0%; height: 100.0%;"><b>Caminhão:</b> JXY 3297<br><b>Velocidade:</b> 78 km/h<br><b>Última Atualização:</b> Não informada</div>`)[0];
+                popup_b1bab39d7e6e0ff48f58fe34b3592182.setContent(html_e7e133c15080aedc46b98c5b3b7039ab);
+            
+        
+
+        marker_06ec47308585eb849e975d8086d49e49.bindPopup(popup_b1bab39d7e6e0ff48f58fe34b3592182)
+        ;
+
+        
+    
+    
+            marker_06ec47308585eb849e975d8086d49e49.bindTooltip(
+                `<div>
+                     Placa: JXY 3297
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_06ec47308585eb849e975d8086d49e49.setIcon(icon_936b09a72642871721ae6d118a1fc2d7);
+            
+    
+            var marker_889b1a7f9913cb0dfe0e4fdffae22b99 = L.marker(
+                [-23.356489, -46.853036],
+                {
+}
+            ).addTo(map_f5b9670526c639adee3d137044c63bf6);
+        
+    
+            var icon_c809f5829a0e035385c43395350a6a8a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "truck",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6e7fa479dab2762db6399e1fafe8e7f5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7328490ac9b21b0d17026f1ad0e70d0e = $(`<div id="html_7328490ac9b21b0d17026f1ad0e70d0e" style="width: 100.0%; height: 100.0%;"><b>Caminhão:</b> JXW 4415<br><b>Velocidade:</b> 0 km/h<br><b>Última Atualização:</b> Não informada</div>`)[0];
+                popup_6e7fa479dab2762db6399e1fafe8e7f5.setContent(html_7328490ac9b21b0d17026f1ad0e70d0e);
+            
+        
+
+        marker_889b1a7f9913cb0dfe0e4fdffae22b99.bindPopup(popup_6e7fa479dab2762db6399e1fafe8e7f5)
+        ;
+
+        
+    
+    
+            marker_889b1a7f9913cb0dfe0e4fdffae22b99.bindTooltip(
+                `<div>
+                     Placa: JXW 4415
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_889b1a7f9913cb0dfe0e4fdffae22b99.setIcon(icon_c809f5829a0e035385c43395350a6a8a);
+            
+    
+            var marker_2a396b6c807bf9c9637dc3ac840d7bc4 = L.marker(
+                [-4.621945, -47.493791],
+                {
+}
+            ).addTo(map_f5b9670526c639adee3d137044c63bf6);
+        
+    
+            var icon_22db21174d7034acc66b7351260bfa10 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "truck",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8f6a7dd6d80564bde3d1cf978fdc3ea4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_15336b76cb91db73fa0f92dd8f04c884 = $(`<div id="html_15336b76cb91db73fa0f92dd8f04c884" style="width: 100.0%; height: 100.0%;"><b>Caminhão:</b> OAA 9108<br><b>Velocidade:</b> 103 km/h<br><b>Última Atualização:</b> Não informada</div>`)[0];
+                popup_8f6a7dd6d80564bde3d1cf978fdc3ea4.setContent(html_15336b76cb91db73fa0f92dd8f04c884);
+            
+        
+
+        marker_2a396b6c807bf9c9637dc3ac840d7bc4.bindPopup(popup_8f6a7dd6d80564bde3d1cf978fdc3ea4)
+        ;
+
+        
+    
+    
+            marker_2a396b6c807bf9c9637dc3ac840d7bc4.bindTooltip(
+                `<div>
+                     Placa: OAA 9108
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2a396b6c807bf9c9637dc3ac840d7bc4.setIcon(icon_22db21174d7034acc66b7351260bfa10);
+            
+    
+            var marker_89873837f070d53c58e30d499d6c4363 = L.marker(
+                [-5.020453, -47.547667],
+                {
+}
+            ).addTo(map_f5b9670526c639adee3d137044c63bf6);
+        
+    
+            var icon_953a15e2e38120abdf76463db167e1f0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "truck",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8c9f4d151d21673c26552585e3ff0ae1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2308a397bc3df76c3ef49f9be2e7b78a = $(`<div id="html_2308a397bc3df76c3ef49f9be2e7b78a" style="width: 100.0%; height: 100.0%;"><b>Caminhão:</b> NOO 5656 S<br><b>Velocidade:</b> 18 km/h<br><b>Última Atualização:</b> Não informada</div>`)[0];
+                popup_8c9f4d151d21673c26552585e3ff0ae1.setContent(html_2308a397bc3df76c3ef49f9be2e7b78a);
+            
+        
+
+        marker_89873837f070d53c58e30d499d6c4363.bindPopup(popup_8c9f4d151d21673c26552585e3ff0ae1)
+        ;
+
+        
+    
+    
+            marker_89873837f070d53c58e30d499d6c4363.bindTooltip(
+                `<div>
+                     Placa: NOO 5656 S
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_89873837f070d53c58e30d499d6c4363.setIcon(icon_953a15e2e38120abdf76463db167e1f0);
+            
+    
+            var marker_c7730e174d15770c4d56804f725563c5 = L.marker(
+                [-19.333093, -48.903742],
+                {
+}
+            ).addTo(map_f5b9670526c639adee3d137044c63bf6);
+        
+    
+            var icon_c8288145c57997f73b822a32391be3cc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "truck",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_705f5fab2e7c54aecfc18011a38dd227 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e8f4cb552e1c5fc1bcb8e271f7046738 = $(`<div id="html_e8f4cb552e1c5fc1bcb8e271f7046738" style="width: 100.0%; height: 100.0%;"><b>Caminhão:</b> JXJ 6076<br><b>Velocidade:</b> 72 km/h<br><b>Última Atualização:</b> Não informada</div>`)[0];
+                popup_705f5fab2e7c54aecfc18011a38dd227.setContent(html_e8f4cb552e1c5fc1bcb8e271f7046738);
+            
+        
+
+        marker_c7730e174d15770c4d56804f725563c5.bindPopup(popup_705f5fab2e7c54aecfc18011a38dd227)
+        ;
+
+        
+    
+    
+            marker_c7730e174d15770c4d56804f725563c5.bindTooltip(
+                `<div>
+                     Placa: JXJ 6076
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c7730e174d15770c4d56804f725563c5.setIcon(icon_c8288145c57997f73b822a32391be3cc);
+            
+    
+            var marker_74e181c82afafd47bd5a3d5b3011aa08 = L.marker(
+                [-1.355945, -48.47884],
+                {
+}
+            ).addTo(map_f5b9670526c639adee3d137044c63bf6);
+        
+    
+            var icon_aa7e536e942064f4c5eec0eade250034 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "truck",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a0bb441b4a3505ff75845a38c410aeca = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2483fb27372687254321922243155c9c = $(`<div id="html_2483fb27372687254321922243155c9c" style="width: 100.0%; height: 100.0%;"><b>Caminhão:</b> OAG 0390<br><b>Velocidade:</b> 0 km/h<br><b>Última Atualização:</b> Não informada</div>`)[0];
+                popup_a0bb441b4a3505ff75845a38c410aeca.setContent(html_2483fb27372687254321922243155c9c);
+            
+        
+
+        marker_74e181c82afafd47bd5a3d5b3011aa08.bindPopup(popup_a0bb441b4a3505ff75845a38c410aeca)
+        ;
+
+        
+    
+    
+            marker_74e181c82afafd47bd5a3d5b3011aa08.bindTooltip(
+                `<div>
+                     Placa: OAG 0390
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_74e181c82afafd47bd5a3d5b3011aa08.setIcon(icon_aa7e536e942064f4c5eec0eade250034);
+            
+    
+            var marker_000ba67387e8cd8de931fe47d6775dd0 = L.marker(
+                [-3.158695, -59.994849],
+                {
+}
+            ).addTo(map_f5b9670526c639adee3d137044c63bf6);
+        
+    
+            var icon_0dae504acde50a82235c6a65f71585f2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "truck",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0794e375f5a2fb809ce3bb3ae9c9de3b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e3a53652b9457f3cf808c2d1892f8c3e = $(`<div id="html_e3a53652b9457f3cf808c2d1892f8c3e" style="width: 100.0%; height: 100.0%;"><b>Caminhão:</b> NOL 3779<br><b>Velocidade:</b> 0 km/h<br><b>Última Atualização:</b> Não informada</div>`)[0];
+                popup_0794e375f5a2fb809ce3bb3ae9c9de3b.setContent(html_e3a53652b9457f3cf808c2d1892f8c3e);
+            
+        
+
+        marker_000ba67387e8cd8de931fe47d6775dd0.bindPopup(popup_0794e375f5a2fb809ce3bb3ae9c9de3b)
+        ;
+
+        
+    
+    
+            marker_000ba67387e8cd8de931fe47d6775dd0.bindTooltip(
+                `<div>
+                     Placa: NOL 3779
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_000ba67387e8cd8de931fe47d6775dd0.setIcon(icon_0dae504acde50a82235c6a65f71585f2);
+            
+    
+            var marker_705d285262a82ffd1befca1b89cf1832 = L.marker(
+                [-3.157358, -58.45612],
+                {
+}
+            ).addTo(map_f5b9670526c639adee3d137044c63bf6);
+        
+    
+            var icon_8e5b827f5930c165d20e9a157bb360e3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "truck",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1cd00b1a48295461b8b39e0b1e589e99 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5df09c46de291e4e75883c3258bbfb91 = $(`<div id="html_5df09c46de291e4e75883c3258bbfb91" style="width: 100.0%; height: 100.0%;"><b>Caminhão:</b> JXH 2572<br><b>Velocidade:</b> 10 km/h<br><b>Última Atualização:</b> Não informada</div>`)[0];
+                popup_1cd00b1a48295461b8b39e0b1e589e99.setContent(html_5df09c46de291e4e75883c3258bbfb91);
+            
+        
+
+        marker_705d285262a82ffd1befca1b89cf1832.bindPopup(popup_1cd00b1a48295461b8b39e0b1e589e99)
+        ;
+
+        
+    
+    
+            marker_705d285262a82ffd1befca1b89cf1832.bindTooltip(
+                `<div>
+                     Placa: JXH 2572
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_705d285262a82ffd1befca1b89cf1832.setIcon(icon_8e5b827f5930c165d20e9a157bb360e3);
+            
+    
+            var marker_9a61ec20610962b4bd49cf3cbd587718 = L.marker(
+                [-1.694448, -50.588049],
+                {
+}
+            ).addTo(map_f5b9670526c639adee3d137044c63bf6);
+        
+    
+            var icon_9f6f37c899fc6437a4d87c28bff50f35 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "truck",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_08fd25309080b545cc5429de494179ae = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5bec318bd6468b6ad871f8e092770ceb = $(`<div id="html_5bec318bd6468b6ad871f8e092770ceb" style="width: 100.0%; height: 100.0%;"><b>Caminhão:</b> OAD 1666<br><b>Velocidade:</b> 9 km/h<br><b>Última Atualização:</b> Não informada</div>`)[0];
+                popup_08fd25309080b545cc5429de494179ae.setContent(html_5bec318bd6468b6ad871f8e092770ceb);
+            
+        
+
+        marker_9a61ec20610962b4bd49cf3cbd587718.bindPopup(popup_08fd25309080b545cc5429de494179ae)
+        ;
+
+        
+    
+    
+            marker_9a61ec20610962b4bd49cf3cbd587718.bindTooltip(
+                `<div>
+                     Placa: OAD 1666
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9a61ec20610962b4bd49cf3cbd587718.setIcon(icon_9f6f37c899fc6437a4d87c28bff50f35);
+            
+    
+            var marker_501af0c38879f2fb2424f7befc2209e3 = L.marker(
+                [-8.276136, -35.806771],
+                {
+}
+            ).addTo(map_f5b9670526c639adee3d137044c63bf6);
+        
+    
+            var icon_3b03ec59b49d6062264e8817a4c1d25e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "truck",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_865b33ae378dfbf50af50edeeeee0643 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_baf83994f7d467e1ee1ae7368d35cc2e = $(`<div id="html_baf83994f7d467e1ee1ae7368d35cc2e" style="width: 100.0%; height: 100.0%;"><b>Caminhão:</b> NOP 4114<br><b>Velocidade:</b> 0 km/h<br><b>Última Atualização:</b> Não informada</div>`)[0];
+                popup_865b33ae378dfbf50af50edeeeee0643.setContent(html_baf83994f7d467e1ee1ae7368d35cc2e);
+            
+        
+
+        marker_501af0c38879f2fb2424f7befc2209e3.bindPopup(popup_865b33ae378dfbf50af50edeeeee0643)
+        ;
+
+        
+    
+    
+            marker_501af0c38879f2fb2424f7befc2209e3.bindTooltip(
+                `<div>
+                     Placa: NOP 4114
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_501af0c38879f2fb2424f7befc2209e3.setIcon(icon_3b03ec59b49d6062264e8817a4c1d25e);
+            
+    
+            var marker_29d5a73caee8b6a59468ee3c6686ff32 = L.marker(
+                [-2.399867, -54.660391],
+                {
+}
+            ).addTo(map_f5b9670526c639adee3d137044c63bf6);
+        
+    
+            var icon_3e88408d4bacfa51a5bd2200d751cf39 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "truck",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2f69193ef0f28f80fd5c0920c9a41b6f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_04c216bdb8137a881988b404ea9011ee = $(`<div id="html_04c216bdb8137a881988b404ea9011ee" style="width: 100.0%; height: 100.0%;"><b>Caminhão:</b> NOL 3929<br><b>Velocidade:</b> 0 km/h<br><b>Última Atualização:</b> Não informada</div>`)[0];
+                popup_2f69193ef0f28f80fd5c0920c9a41b6f.setContent(html_04c216bdb8137a881988b404ea9011ee);
+            
+        
+
+        marker_29d5a73caee8b6a59468ee3c6686ff32.bindPopup(popup_2f69193ef0f28f80fd5c0920c9a41b6f)
+        ;
+
+        
+    
+    
+            marker_29d5a73caee8b6a59468ee3c6686ff32.bindTooltip(
+                `<div>
+                     Placa: NOL 3929
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_29d5a73caee8b6a59468ee3c6686ff32.setIcon(icon_3e88408d4bacfa51a5bd2200d751cf39);
+            
+    
+            var marker_793c18cc30cc23655de81a15b5153303 = L.marker(
+                [-3.123325, -59.977311],
+                {
+}
+            ).addTo(map_f5b9670526c639adee3d137044c63bf6);
+        
+    
+            var icon_dcd41b347745acfbcf2102713f63c9a7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "truck",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d6b5fc6fbe8b4eaa15a2436aff8652cf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_773cc83800b3a0bd5d9bd9aac6b52e18 = $(`<div id="html_773cc83800b3a0bd5d9bd9aac6b52e18" style="width: 100.0%; height: 100.0%;"><b>Caminhão:</b> JXH 2492<br><b>Velocidade:</b> 0 km/h<br><b>Última Atualização:</b> Não informada</div>`)[0];
+                popup_d6b5fc6fbe8b4eaa15a2436aff8652cf.setContent(html_773cc83800b3a0bd5d9bd9aac6b52e18);
+            
+        
+
+        marker_793c18cc30cc23655de81a15b5153303.bindPopup(popup_d6b5fc6fbe8b4eaa15a2436aff8652cf)
+        ;
+
+        
+    
+    
+            marker_793c18cc30cc23655de81a15b5153303.bindTooltip(
+                `<div>
+                     Placa: JXH 2492
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_793c18cc30cc23655de81a15b5153303.setIcon(icon_dcd41b347745acfbcf2102713f63c9a7);
+            
+    
+            var marker_a33547af4ca04ad5a567e919cc42a131 = L.marker(
+                [-1.355823, -48.480476],
+                {
+}
+            ).addTo(map_f5b9670526c639adee3d137044c63bf6);
+        
+    
+            var icon_c31b9d74307505069fb81dfab46c18b7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "truck",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ed02cea2bd6ad1dda87456114bbc3afc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_608c1154f53c30b2eceb6873fac02288 = $(`<div id="html_608c1154f53c30b2eceb6873fac02288" style="width: 100.0%; height: 100.0%;"><b>Caminhão:</b> OAD 2457<br><b>Velocidade:</b> 0 km/h<br><b>Última Atualização:</b> Não informada</div>`)[0];
+                popup_ed02cea2bd6ad1dda87456114bbc3afc.setContent(html_608c1154f53c30b2eceb6873fac02288);
+            
+        
+
+        marker_a33547af4ca04ad5a567e919cc42a131.bindPopup(popup_ed02cea2bd6ad1dda87456114bbc3afc)
+        ;
+
+        
+    
+    
+            marker_a33547af4ca04ad5a567e919cc42a131.bindTooltip(
+                `<div>
+                     Placa: OAD 2457
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a33547af4ca04ad5a567e919cc42a131.setIcon(icon_c31b9d74307505069fb81dfab46c18b7);
+            
+    
+            var marker_fd277277500a44820318028b4be025a6 = L.marker(
+                [-5.019247, -47.547631],
+                {
+}
+            ).addTo(map_f5b9670526c639adee3d137044c63bf6);
+        
+    
+            var icon_210479b3508cfa63583b3c24b08ffb27 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "truck",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fd2083a2627cdba040e89d7ed4def20c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c19a9ee110c0e85becf5cf47d0787ab4 = $(`<div id="html_c19a9ee110c0e85becf5cf47d0787ab4" style="width: 100.0%; height: 100.0%;"><b>Caminhão:</b> OAG 0330<br><b>Velocidade:</b> 39 km/h<br><b>Última Atualização:</b> Não informada</div>`)[0];
+                popup_fd2083a2627cdba040e89d7ed4def20c.setContent(html_c19a9ee110c0e85becf5cf47d0787ab4);
+            
+        
+
+        marker_fd277277500a44820318028b4be025a6.bindPopup(popup_fd2083a2627cdba040e89d7ed4def20c)
+        ;
+
+        
+    
+    
+            marker_fd277277500a44820318028b4be025a6.bindTooltip(
+                `<div>
+                     Placa: OAG 0330
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_fd277277500a44820318028b4be025a6.setIcon(icon_210479b3508cfa63583b3c24b08ffb27);
+            
+    
+            var marker_edfcac612cb344ca9381b8e8f78afb7a = L.marker(
+                [-2.994483, -60.050724],
+                {
+}
+            ).addTo(map_f5b9670526c639adee3d137044c63bf6);
+        
+    
+            var icon_87c0830145bc4a5e49acb45c135fd2a8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "truck",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a510badfad0ca87f6d7d7aea80bd288f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fb2c387d25eea06e317e7ebc2fa03abf = $(`<div id="html_fb2c387d25eea06e317e7ebc2fa03abf" style="width: 100.0%; height: 100.0%;"><b>Caminhão:</b> NOM 0329<br><b>Velocidade:</b> 0 km/h<br><b>Última Atualização:</b> Não informada</div>`)[0];
+                popup_a510badfad0ca87f6d7d7aea80bd288f.setContent(html_fb2c387d25eea06e317e7ebc2fa03abf);
+            
+        
+
+        marker_edfcac612cb344ca9381b8e8f78afb7a.bindPopup(popup_a510badfad0ca87f6d7d7aea80bd288f)
+        ;
+
+        
+    
+    
+            marker_edfcac612cb344ca9381b8e8f78afb7a.bindTooltip(
+                `<div>
+                     Placa: NOM 0329
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_edfcac612cb344ca9381b8e8f78afb7a.setIcon(icon_87c0830145bc4a5e49acb45c135fd2a8);
+            
+    
+            map_f5b9670526c639adee3d137044c63bf6.fitBounds(
+                [[-22.995892, -47.131315], [-1.376812, -48.402643], [-3.121728, -59.979785], [-22.994007, -47.130434], [-3.122558, -59.979387], [-2.441634, -54.532275], [-1.600975, -52.681316], [-22.995618, -47.129831], [-22.995893, -47.129631], [-1.355887, -48.479102], [-1.378565, -48.401941], [-22.99586, -47.129604], [-3.122117, -59.97988], [-3.122358, -59.979649], [-3.122142, -59.979924], [-3.105207, -60.068547], [-3.105138, -60.068516], [-3.121696, -59.979013], [-22.995756, -47.130262], [-22.993684, -47.1302], [-22.993924, -47.130378], [-3.157179, -59.994142], [-3.157168, -59.99392], [-1.356738, -48.481174], [-1.936098, -55.512898], [-3.122157, -59.980111], [-22.996127, -47.130133], [-1.220857, -47.199347], [-1.355878, -48.479982], [-2.364945, -54.688476], [-0.014652, -51.202342], [-1.337323, -47.904116], [-1.813943, -49.927302], [-23.356429, -46.853693], [-12.740849, -38.317502], [-2.986263, -47.45548], [-0.014577, -51.202311], [-3.121387, -59.979493], [-22.995702, -47.129876], [-1.814037, -49.927476], [-1.37706, -48.402338], [-4.197708, -47.54508], [-23.356489, -46.853036], [-4.621945, -47.493791], [-5.020453, -47.547667], [-19.333093, -48.903742], [-1.355945, -48.47884], [-3.158695, -59.994849], [-3.157358, -58.45612], [-1.694448, -50.588049], [-8.276136, -35.806771], [-2.399867, -54.660391], [-3.123325, -59.977311], [-1.355823, -48.480476], [-5.019247, -47.547631], [-2.994483, -60.050724]],
+                {}
+            );
+        
+</script>
+</html>
